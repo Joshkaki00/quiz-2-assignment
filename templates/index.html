@@ -1,0 +1,16 @@
+<form method="post">
+    Character ID: <input type="text" name="character_id">
+    <input type="submit" value="Get Character">
+</form>
+{% if character_data %}
+    {% if character_data.error %}
+        <p><strong>Error:</strong> {{ character_data.error }}</p>
+    {% else %}
+        <h2>Character Information</h2>
+        <p><strong>Name:</strong> {{ character_data.name }}</p>
+        <p><strong>Height:</strong> {{ character_data.height }}</p>
+        <p><strong>Mass:</strong> {{ character_data.mass }}</p>
+        <p><strong>Hair Color:</strong> {{ character_data.hair_color }}</p>
+        <p><strong>Eye Color:</strong> {{ character_data.eye_color }}</p>
+    {% endif %}
+{% endif %}
