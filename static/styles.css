@@ -29,6 +29,14 @@ form {
     max-width: 400px;
 }
 
+/* Form label styling */
+label {
+    margin-right: 10px; /* Adds space between label and input box */
+    font-size: 16px;
+    color: #ffe81f; /* Star Wars yellow */
+    font-weight: bold;
+}
+
 /* Input field styling */
 input[type="text"] {
     padding: 8px;

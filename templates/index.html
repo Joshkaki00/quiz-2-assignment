@@ -8,8 +8,10 @@
 </head>
 <body>
     <form method="post">
-    Character ID: <input type="text" name="character_id">
-    <input type="submit" value="Get Character" />
+        <label for="character_id">Character ID:</label>
+        <input type="text" id="character_id" name="character_id">
+        <input type="submit" value="Get Character">
+    </form>
 </form>
 {% if character_data %}
     {% if character_data.error %}
