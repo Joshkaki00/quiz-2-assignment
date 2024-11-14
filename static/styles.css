@@ -1,58 +1,78 @@
+/* General body styling */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    font-family: 'Arial', sans-serif;
+    background-color: #000; /* Deep space black */
+    color: #f1f1f1; /* Light text for high contrast */
     margin: 0;
     padding: 0;
 }
 
+/* Main title styling */
 h1 {
-    color: #333;
+    color: #ffe81f; /* Star Wars yellow */
     text-align: center;
+    font-size: 2.5em;
+    font-family: 'Star Jedi', sans-serif; /* Optional: use a Star Wars-style font */
+    text-shadow: 0 0 5px #ffe81f, 0 0 10px #ffe81f;
+    margin-top: 20px;
 }
 
+/* Form container styling */
 form {
     display: flex;
     justify-content: center;
     padding: 20px;
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.1); /* Translucent white for a high-tech look */
     margin: 20px auto;
     border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 10px rgba(255, 255, 255, 0.2);
     max-width: 400px;
 }
 
+/* Input field styling */
 input[type="text"] {
     padding: 8px;
     margin-right: 10px;
     width: 200px;
-    border: 1px solid #ccc;
+    border: 1px solid #ffe81f; /* Yellow border */
     border-radius: 4px;
+    background-color: #222; /* Dark background */
+    color: #ffe81f; /* Yellow text */
 }
 
+/* Submit button styling */
 input[type="submit"] {
     padding: 8px 16px;
-    background-color: #4CAF50;
-    color: white;
+    background-color: #ffe81f;
+    color: #000;
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    font-weight: bold;
+    box-shadow: 0 0 5px #ffe81f, 0 0 15px #ffe81f;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+/* Hover effect for the submit button */
 input[type="submit"]:hover {
-    background-color: #45a049;
+    background-color: #fff; /* Light up effect */
+    color: #000;
 }
 
+/* Character information box styling */
 .character-info {
     text-align: center;
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent */
     margin: 20px auto;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 10px rgba(255, 255, 255, 0.2);
     max-width: 500px;
 }
 
+/* Text inside character info box */
 .character-info p {
     margin: 10px 0;
     font-size: 16px;
+    color: #ffe81f; /* Yellow text for consistency */
 }
